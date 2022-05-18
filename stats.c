@@ -1,4 +1,5 @@
 #include "stats.h"
+#include <cstdio>
 
 struct Stats compute_statistics(const float* numberset, int setlength) {
     struct Stats s;
@@ -23,7 +24,7 @@ int main()
     
     printf("Average = %f",s.average);
     
-    s.min = numberseet[0];
+    s.min = numberset[0];
     for(i=0; i<(setlength-1);i++)
     {
         if(numberset[i] < s.min)
@@ -33,7 +34,7 @@ int main()
     }
     printf("Minimum = %f",s.min);
     
-    s.max = numberseet[0];
+    s.max = numberset[0];
     for(i=0; i<(setlength-1);i++)
     {
         if(numberset[i] > s.max)
