@@ -13,7 +13,8 @@ int ledAlertCallCount = 0;
 
 int main()
 {
-    int i,sum=0;
+    int i;
+    float sum=0;
     float numberset[];
     int setlength = sizeof(numberset) / sizeof(numberset[0]);
     for(i=0; i<(setlength-1);i++)
