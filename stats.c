@@ -42,4 +42,4 @@ int main()
         }
     }
     printf("Maximum = %f",s.max);
-    
+}
