@@ -32,7 +32,7 @@ struct Stats compute_statistics(const float* numberset, int setlength)
     }
     s1.average = sum/setlength;
     
-    printf("Average = %f",s.average);
+    printf("Average = %f",s1.average);
     
     s1.min = numberset[0];
     for(i=0; i<(setlength-1);i++)
@@ -42,7 +42,7 @@ struct Stats compute_statistics(const float* numberset, int setlength)
             s1.min = numberset[i];
         }
     }
-    printf("Minimum = %f",s.min);
+    printf("Minimum = %f",s1.min);
     
     s.max = numberset[0];
     for(i=0; i<(setlength-1);i++)
@@ -52,6 +52,6 @@ struct Stats compute_statistics(const float* numberset, int setlength)
             s1.max = numberset[i];
         }
     }
-    
+    printf("Maximum = %f",s1.max);
     return s1;
 }
