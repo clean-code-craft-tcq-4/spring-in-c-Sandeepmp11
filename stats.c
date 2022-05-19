@@ -6,12 +6,12 @@ struct Stats{
     float max;
 }
 
-struct Stats compute_statistics(const float* numberset, int setlength);
+struct Stats compute_statistics(const float numberset, int setlength);
 
 int main()
 {
 struct Stats s;
-    s = compute_statistics(const float* numberset, int setlength);
+    s = compute_statistics(const float numberset[], int setlength);
     s.average = 0;
     s.min = 0;
     s.max = 0; 
@@ -20,7 +20,7 @@ int ledAlertCallCount = 0;
 return 0;
 }
 
-struct Stats compute_statistics(const float* numberset, int setlength)
+struct Stats compute_statistics(const float numberset[], int setlength)
 {
     struct Stats s1;
     int i;
