@@ -1,7 +1,7 @@
 #include "stats.h"
 #include <cstdio>
 
-struct Stats compute_statistics(const float* numberset, int setlength) {
+struct Stats compute_statistics(const float numberset[], int setlength) {
     struct Stats s;
     s.average = 0;
     s.min = 0;
@@ -11,7 +11,7 @@ struct Stats compute_statistics(const float* numberset, int setlength) {
 int emailAlertCallCount = 0;
 int ledAlertCallCount = 0;
 
-struct Stats compute_statistics(const float* numberset, int setlength)
+struct Stats compute_statistics(const float numberset[], int setlength)
 {
     int i;
     float sum=0;
