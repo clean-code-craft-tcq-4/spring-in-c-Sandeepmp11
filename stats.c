@@ -11,11 +11,11 @@ struct Stats compute_statistics(const float* numberset, int setlength) {
 int emailAlertCallCount = 0;
 int ledAlertCallCount = 0;
 
-int main()
+struct Stats compute_statistics(const float* numberset, int setlength)
 {
     int i;
     float sum=0;
-    float numberset[];
+    float numberset[100];
     int setlength = sizeof(numberset) / sizeof(numberset[0]);
     for(i=0; i<(setlength-1);i++)
     {
@@ -44,4 +44,5 @@ int main()
         }
     }
     printf("Maximum = %f",s.max);
+    
 }
